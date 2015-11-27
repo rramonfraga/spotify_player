@@ -1,2 +1,5 @@
-# spotify_player
-Spotify Player - Sixth exercise in IronHack
+# Spotify Player
+
+This is the skeleton to start implementing the Spotify Player!
+
+Happy coding!

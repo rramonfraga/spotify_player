@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Spotify Player </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<nav class="menu">
+	    <h1 id="menu-title"> Spotify Player </h1>
+	  </nav>
+  </header>
+  <section class="search-container">
+    <form> 
+      <input class="js-search" type="text" name="search" placeholder="Search">
+      <button class="js-submit" type="submit"> Search </button>
+    </form>
+  </section>
+	<section class="widget">
+		<div class="header">
+		<!-- Try adding/removing these classes: -->
+		<!-- disabled -->
+		<!-- playing -->
+		<div class="btn-play disabled"></div>
+
+		<div class="metadata">
+		  <p class="title">Hunger of The Pine</p>
+		  <p class="author">alt-J</p>
+
+		  <div class="seekbar">
+		    <progress value="5" max="30"></progress>
+		  </div>
+		</div>
+		</div>
+		<div class="cover js-cover">
+		<img src="https://i.scdn.co/image/04da6dfc1f5f45fdeba938a0cc71cf372524fd43">
+		</div>
+
+		<audio src="https://p.scdn.co/mp3-preview/8e9c5ffdc38e91659bfe8b6bd44650dfc25a3d31"></audio>
+	</section>
+
+  <script src="scripts/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts/spotify_player.js"></script>
+</body>
+</html>
