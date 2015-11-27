@@ -13,6 +13,10 @@ function fetchTrack (event) {
       
     var html_cover = '<img class="js-artist-img" src="' + track.album.images[0].url + '">';
     $('.js-cover').html(html_cover);
+
+    var html_audio = '<audio class="js-player disabled" src="' + track.preview_url + '">';
+    $('.js-audio').html(html_audio);
+
     
     };
   
@@ -28,6 +32,25 @@ function fetchTrack (event) {
 $('.js-submit').on('click', fetchTrack);
 
 
+
+$('.btn-play').on('click', function play(){
+  if( $('.js-player').hasClass("disabled") ){
+    $('.js-player').toggleClass("disabled");
+    $('.js-player').trigger('play');
+  }else{
+    $('.js-player').toggleClass("disabled");
+    $('.js-player').trigger('pause');
+  };
+  $('.btn-play').toggleClass("playing");
+})
+
+/*
+$('.btn-play').on('click', function appearance(){
+    $('.btn-play').toggleClass("playing");
+  }
+
+}
+*/
 
 /*
 function showModal(bodyText){
